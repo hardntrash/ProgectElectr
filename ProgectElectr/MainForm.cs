@@ -16,5 +16,15 @@ namespace ProgectElectr
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonForTotalResist_Click(object sender, EventArgs e)
+        {
+            textBox4.Text = Convert.ToString(Convert.ToInt32(textBox2.Text) + Convert.ToInt32(textBox3.Text));
+        }
     }
 }
